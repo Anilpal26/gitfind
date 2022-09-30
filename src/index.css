@@ -1,0 +1,141 @@
+:root{
+  --white:#ffffff;
+  --dark : #00171f;
+  --navy-blue : #003459;
+  --dark-blue : #007EA7;
+  --blue : #00A8E8;
+}
+
+body, h6,h5,h4,h3,h2,h1,p{
+  margin: 0px;
+  padding: 0px;
+}
+
+main{
+  background-color: var(--dark);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: calc(100vh - 4rem);
+}
+
+main > .card {
+  width: 95vw;
+  max-width: 500px;
+  background-color: var(--white);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.search > form > button {
+  width: 5rem;
+  background-color: var(--blue);
+  border-color: var(--dark-blue);
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.10s linear;
+}
+.search > form > button:hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.search > form > input {
+  width: calc(100% - 6rem);
+  margin-right: 00.5rem;
+}
+.search > form > input:focus{
+  outline-color: var(--dark-blue); 
+}
+
+.detail > img {
+  border-radius: 50%;
+  width: 10rem;
+  margin: 1rem;
+  outline: 2px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.section-right{
+  display: inline-block;
+  margin: 3rem 0.5rem 0px;
+  vertical-align: top;
+}
+
+.buttons > button{
+  margin: 5px;
+  width: 31.3%;
+  padding: 0.5rem 0px;
+  background-color: transparent;
+  cursor: pointer;
+  /* border-color: var(--blue); */
+  /* border-style: solid; */
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons > button:hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+.buttons > button > span {
+  display: block;
+  font-weight: bold;
+}
+
+.incorrect{
+  margin: 3px;
+  color: orangered;
+}
+
+.active{
+  outline: 3px solid var(--dark-blue) !important;
+}
+
+.following-list img , .followers-List img {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.followers-List a{
+  margin-left: 1rem;
+}
+
+.repo-list ol li a{
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.load-more{
+  margin-top: -2.5rem;
+}
+
+.load-more button {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  transform: all 0.15s linear;
+  border-radius: 2px;
+}
+
+.load-more button:hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
